@@ -1,0 +1,54 @@
+{
+	"name": "array-reduce-group-by",
+	"version": "0.0.0",
+	"description": "A group-by function working with the built-in Array.reduce()",
+	"license": "MIT",
+	"repository": "EdJoPaTo/array-reduce-group-by",
+	"author": {
+		"name": "EdJoPaTo",
+		"email": "edjopato@gmail.com",
+		"url": "https://edjopato.de"
+	},
+	"engines": {
+		"node": ">=8"
+	},
+	"scripts": {
+		"build": "del dist && tsc",
+		"prepack": "npm run build",
+		"test": "tsc && xo && ava"
+	},
+	"main": "dist/source",
+	"types": "dist/source",
+	"files": [
+		"dist/source",
+		"!*.test.*"
+	],
+	"keywords": [
+		""
+	],
+	"dependencies": {},
+	"devDependencies": {
+		"@sindresorhus/tsconfig": "^0.6.0",
+		"@types/node": "^12.0.2",
+		"@typescript-eslint/eslint-plugin": "^2.7.0",
+		"@typescript-eslint/parser": "^2.7.0",
+		"ava": "^2.1.0",
+		"del-cli": "^3.0.0",
+		"eslint-config-xo-typescript": "^0.21.0",
+		"typescript": "^3.3.3",
+		"xo": "^0.25.3"
+	},
+	"ava": {
+		"babel": false,
+		"compileEnhancements": false
+	},
+	"xo": {
+		"extends": "xo-typescript",
+		"extensions": [
+			"ts"
+		],
+		"rules": {
+			"ava/no-ignored-test-files": "off"
+		}
+	}
+}
