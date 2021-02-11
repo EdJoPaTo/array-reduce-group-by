@@ -2,7 +2,6 @@
 
 [![NPM Version](https://img.shields.io/npm/v/array-reduce-group-by.svg)](https://www.npmjs.com/package/array-reduce-group-by)
 [![node](https://img.shields.io/node/v/array-reduce-group-by.svg)](https://www.npmjs.com/package/array-reduce-group-by)
-[![Build Status](https://travis-ci.com/EdJoPaTo/array-reduce-group-by.svg?branch=master)](https://travis-ci.com/EdJoPaTo/array-reduce-group-by)
 [![Dependency Status](https://david-dm.org/EdJoPaTo/array-reduce-group-by/status.svg)](https://david-dm.org/EdJoPaTo/array-reduce-group-by)
 [![Dev Dependency Status](https://david-dm.org/EdJoPaTo/array-reduce-group-by/dev-status.svg)](https://david-dm.org/EdJoPaTo/array-reduce-group-by?type=dev)
 
