@@ -12,6 +12,6 @@ test('simple example', t => {
 	const result = input.reduce(arrayReduceGroupBy(o => o[0]!), {});
 	t.deepEqual(result, {
 		A: ['Alpha', 'Animal'],
-		B: ['Beta']
+		B: ['Beta'],
 	});
 });
