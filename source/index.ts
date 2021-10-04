@@ -11,7 +11,7 @@ export default function arrayReduceGroupBy<Key extends string | number | symbol,
 }
 
 // For CommonJS default export support
-/* eslint-disable unicorn/prefer-module, @typescript-eslint/no-unsafe-member-access */
+/* eslint-disable unicorn/prefer-module */
 module.exports = arrayReduceGroupBy;
 module.exports.default = arrayReduceGroupBy;
 /* eslint-enable */

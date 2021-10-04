@@ -8,10 +8,10 @@ test('empty input array', t => {
 });
 
 test('simple example', t => {
-	const input: string[] = ['Alpha', 'Beta', 'Animal'];
+	const input: string[] = ['alpha', 'beta', 'animal'];
 	const result = input.reduce(arrayReduceGroupBy(o => o[0]!), {});
 	t.deepEqual(result, {
-		A: ['Alpha', 'Animal'],
-		B: ['Beta'],
+		a: ['alpha', 'animal'],
+		b: ['beta'],
 	});
 });
