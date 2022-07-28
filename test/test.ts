@@ -1,5 +1,5 @@
 import test from 'ava';
-import arrayReduceGroupBy from '../source/index.js';
+import {arrayReduceGroupBy} from '../source/index.js';
 
 test('empty input array', t => {
 	const input: string[] = [];

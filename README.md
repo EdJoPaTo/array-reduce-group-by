@@ -18,10 +18,10 @@ $ npm install array-reduce-group-by
 ## Usage
 
 ```js
-const arrayReduceGroupBy = require('array-reduce-group-by');
+import {arrayReduceGroupBy} from "array-reduce-group-by";
 
-['Alpha', 'Beta', 'Animal']
-	.reduce(arrayReduceGroupBy(o => o[0]), {})
+["Alpha", "Beta", "Animal"]
+  .reduce(arrayReduceGroupBy((o) => o[0]), {});
 //=> {A: ['Alpha', 'Animal'], B: ['Beta']}
 ```
 

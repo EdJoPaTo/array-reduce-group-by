@@ -1,4 +1,4 @@
-export default function arrayReduceGroupBy<
+export function arrayReduceGroupBy<
 	Key extends string | number | symbol,
 	Value,
 >(
@@ -14,9 +14,3 @@ export default function arrayReduceGroupBy<
 		return coll;
 	};
 }
-
-// For CommonJS default export support
-/* eslint-disable unicorn/prefer-module */
-module.exports = arrayReduceGroupBy;
-module.exports.default = arrayReduceGroupBy;
-/* eslint-enable */
