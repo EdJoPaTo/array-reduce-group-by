@@ -2,18 +2,14 @@
 
 [![NPM Version](https://img.shields.io/npm/v/array-reduce-group-by.svg)](https://www.npmjs.com/package/array-reduce-group-by)
 [![node](https://img.shields.io/node/v/array-reduce-group-by.svg)](https://www.npmjs.com/package/array-reduce-group-by)
-[![Dependency Status](https://david-dm.org/EdJoPaTo/array-reduce-group-by/status.svg)](https://david-dm.org/EdJoPaTo/array-reduce-group-by)
-[![Dev Dependency Status](https://david-dm.org/EdJoPaTo/array-reduce-group-by/dev-status.svg)](https://david-dm.org/EdJoPaTo/array-reduce-group-by?type=dev)
 
 > A group-by function working with the built-in Array.reduce()
 
-
 ## Install
 
+```bash
+npm install array-reduce-group-by
 ```
-$ npm install array-reduce-group-by
-```
-
 
 ## Usage
 
@@ -26,7 +22,6 @@ import {arrayReduceGroupBy} from "array-reduce-group-by";
 ```
 
 Make sure not to forget the `{}` in the end!
-
 
 ## API
 
