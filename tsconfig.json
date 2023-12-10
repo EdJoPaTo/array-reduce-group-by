@@ -1,12 +1,11 @@
 {
 	"extends": "@sindresorhus/tsconfig/tsconfig.json",
 	"include": [
-		"source",
-		"test"
+		"source"
 	],
 	"compilerOptions": {
-		"target": "ES2015",
-		"lib": ["ES2015"],
+		"target": "ES2019", // Node.js 12
+		"lib": ["ES2019"],
 		"outDir": "dist"
 	}
 }

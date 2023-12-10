@@ -1,16 +1,17 @@
-import test from 'ava';
-import {arrayReduceGroupBy} from '../source/index.js';
+import {deepStrictEqual} from 'node:assert';
+import {test} from 'node:test';
+import {arrayReduceGroupBy} from './index.js';
 
-test('empty input array', t => {
+await test('empty input array', () => {
 	const input: string[] = [];
 	const result = input.reduce(arrayReduceGroupBy(o => o[0]!), {});
-	t.deepEqual(result, {});
+	deepStrictEqual(result, {});
 });
 
-test('simple example', t => {
+await test('simple example', () => {
 	const input: string[] = ['alpha', 'beta', 'animal'];
 	const result = input.reduce(arrayReduceGroupBy(o => o[0]!), {});
-	t.deepEqual(result, {
+	deepStrictEqual(result, {
 		a: ['alpha', 'animal'],
 		b: ['beta'],
 	});
