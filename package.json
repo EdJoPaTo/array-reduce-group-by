@@ -27,7 +27,7 @@
 		"c8": "^9.0.0",
 		"del-cli": "^5.0.0",
 		"typescript": "^5.0.2",
-		"xo": "^0.56.0"
+		"xo": "^0.57.0"
 	},
 	"files": [
 		"dist",
@@ -38,7 +38,8 @@
 	"types": "./dist/index.d.ts",
 	"xo": {
 		"rules": {
-			"@typescript-eslint/prefer-readonly-parameter-types": "error"
+			"@typescript-eslint/prefer-readonly-parameter-types": "error",
+			"logical-assignment-operators": "off"
 		},
 		"overrides": [
 			{

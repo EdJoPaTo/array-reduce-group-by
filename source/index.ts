@@ -2,15 +2,15 @@ export function arrayReduceGroupBy<
 	Key extends string | number | symbol,
 	Value,
 >(
-	keyFunc: (entry: Value) => Key,
+	keyFunction: (entry: Value) => Key,
 ): (coll: Record<Key, Value[]>, add: Value) => Record<Key, Value[]> {
-	return (coll, add) => {
-		const key = keyFunc(add);
-		if (!coll[key]) {
-			coll[key] = [];
+	return (collection, add) => {
+		const key = keyFunction(add);
+		if (!collection[key]) {
+			collection[key] = [];
 		}
 
-		coll[key].push(add);
-		return coll;
+		collection[key].push(add);
+		return collection;
 	};
 }
