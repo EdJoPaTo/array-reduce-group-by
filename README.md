@@ -5,6 +5,16 @@
 
 > A group-by function working with the built-in Array.reduce()
 
+## Deprecation Hint
+
+Prefer ES2024 [`Object.groupBy()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/groupBy) (supported since Node.js 21):
+
+```ts
+Object.groupBy(["Alpha", "Beta", "Animal"], (o) => o[0]);
+//=> {A: ['Alpha', 'Animal'], B: ['Beta']}
+
+```
+
 ## Install
 
 ```bash
